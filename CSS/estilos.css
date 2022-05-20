@@ -1,0 +1,4709 @@
+*{
+  margin: auto;
+  padding: 0;
+}
+
+
+/*font*/
+@font-face {
+  font-family: "RedHatDisplay-Italic";
+  src: url(../FONTS/RedHatDisplay-Italic.otf) format('opentype');
+}
+@font-face {
+  font-family: "RedHatDisplay-Regular";
+  src: url(../FONTS/RedHatDisplay-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: "AbrilFatface-Regular";
+  src: url(../FONTS/AbrilFatface-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "AbrilFatface-Regular";
+  src: url(../FONTS/AbrilFatface-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Medium";
+  src: url(../FONTS/Alata-Medoum.otf) format('opentype');
+}
+
+
+
+body{
+  background-color:  white;
+  font-family:"fira sans Coondensed", sans-serif;
+  font-weight:400;
+
+}
+
+.clear{
+  clear:both;
+}
+
+
+label input {
+  display: none;
+}
+
+label ul{
+  display: none;
+}
+/*menu ordenador*/
+
+nav{
+  background: black;
+  height:70px;
+  width:1870px;
+
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.logo{
+  width: 170px;
+  height: 55px;
+  margin-left: 50px;
+  margin-top: 8px;
+  background-image: url("../IMG/logo.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+nav ul{
+  float: right;
+  list-style: none;
+  margin-right: 650px;
+  position: relative;
+  display: block;
+  position: relative;
+
+}
+
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: black;
+  margin: 0 5px;
+  font-family: RedHatDisplay-Regular;
+  font-weight: regular;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+.fa.fa-home{
+  color: white;
+  margin-right: 4px;
+}
+
+.fa.fa-users{
+  color: white;
+  margin-right: 4px;
+}
+
+.fa.fa-cutlery{
+  color: white;
+  margin-right: 4px;
+}
+
+.fa.fa-phone{
+  color: white;
+  margin-right: 4px;
+}
+
+nav ul li a:hover{
+  color: #f4736c;
+  border-radius: 5px;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+nav ul ul{
+  position: absolute;
+  top:90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+
+nav ul ul ul{
+  border-top: none;
+}
+
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid red;
+  border-top: 3px solid red;
+}
+
+nav ul ul li a{
+  line-height: 50px;
+}
+
+nav ul  ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+
+.fa.fa-plus{
+  margin-left: 4px;
+  font-size: 15px;
+}
+
+td{
+  border-collapse: collapse;
+  border-bottom: 2px dashed red;
+}
+table{
+  width: 800px;
+  text-align: center;
+}
+
+
+tr{
+  height: 20px;
+  color: red;
+  font-family: RedHatDisplay-Regular;
+}
+
+th{
+  color: red;
+  height: 27px;
+  font-family: AbrilFatface-Regular;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+}
+
+.postre_ingredientes th{
+  border-bottom: 2px solid #F4736C;
+  border-top: 2px solid #F4736C;
+  font-family: AbrilFatface-Regular;
+  color: #F4736C;
+}
+
+.postre_ingredientes tr{
+  color: #F4736C;
+}
+
+.postre_ingredientes td{
+  color: #F4736C;
+}
+
+.postre_ingredientes{
+  margin-top: 30px;
+}
+.body_postre.gulab{
+  background-image: url("../IMG/fondo_5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*pàgina inici*/
+
+#inicio_1{
+  width:1870px;
+  height: 800px;
+  background-color: white;
+  padding-top: 20px;
+  background-image: url("../IMG/quienes_fondo.jpg");
+  background-size: cover;
+
+}
+
+#inicio_1 h4{
+  font-family: Updock;
+  font-weight: bold;
+  font-size: 150px;
+  font-style: italic;
+  display: block;
+  width: 500px;
+  margin-top: -900px;
+  margin-right:60px;
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+}
+
+.titulo{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 6em;
+  color:#fff;
+  text-shadow: 0 0 20px red;
+
+}
+
+.titulo:after{
+  content: attr(data-text);
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: red;
+}
+
+.slogan{
+  position:relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  margin-top: -370px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan h2{
+  color: white;
+  line-height: 70px;
+  width: 200px;
+  font-family: AbrilFatface-Regular;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+
+
+}
+
+
+text-shadow: 0 0 10px red,
+             0 0 20px red,
+             0 0 40px red,
+             0 0 80px red,
+             0 0 120px red;
+
+/*inici*/
+/*receta_masala_dosa*/
+#inicio_masala_dosa{
+  height: 500px;
+  width: 1870px;
+  background-color: white;
+  display: block;
+}
+
+#imagen_masala_dosa{
+  width: 1225px;
+  height: 500px;
+  background-size:cover;
+  margin-left: 645px;
+  display: inline-block;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:1px 10px 25px rgba(0,0,0,0.5);
+}
+
+#imagen_masala_dosa img{
+  transition: 2s;
+}
+
+#imagen_masala_dosa img:hover{
+ transform: translateY(-30%);
+ filter: brightness(80%);
+}
+
+#inicio_masala_dosa h6.subtitulo{
+  position: relative;
+  margin-top: -400px;
+  margin-left: 360px;
+  font-family: AbrilFatface-Regular;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  color: red;
+  width: 520px;
+}
+
+
+
+#inicio_masala_dosa p{
+  font-family: RedHatDisplay-Regular;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+  width: 520px;
+}
+
+
+a.button_masala_dosa {
+    margin-left: 250px;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+a.button_masala_dosa:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+/*inici*/
+/*receta_arepas*/
+#inicio_arepas{
+  height: 500px;
+  width: 1870px;
+  margin-top: 165px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+}
+
+#imagen_arepas{
+  width: 1225pX;
+  height: 500pX;
+  background-size: cover;
+  margin-left: 0px;
+  display: block;
+  text-shadow: 2px 2px pink;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:1px 10px 25px rgba(0,0,0,0.5);
+}
+
+#imagen_arepas img{
+ transition: 2s;
+}
+
+#imagen_arepas img:hover{
+ transform: translateY(-30%);
+ filter: brightness(80%);
+}
+
+
+#inicio_arepas h6.subtitulo{
+  position: relative;
+  margin-top: -390px;
+  margin-left: 1570px;
+  font-family: AbrilFatface-Regular;
+  transform: translate(-50%,-50%);
+  padding: 0 20px;
+  font-size: 60px;
+  color: red;
+
+
+}
+
+
+
+#inicio_arepas p{
+  font-family: RedHatDisplay-Regular;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+  margin-left: 1300px;
+  margin-top:10px;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+  width:500px;
+  text-align: center;
+}
+
+a.button_arepas{
+    margin-left: 1500px;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+a.button_arepas:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+
+}
+
+/*slider_receta*/
+.inicio_1_img{
+  width: 1190px;
+  height: 200px;
+  background-color: transparent;
+  margin-top: 350px;
+  margin-right: 330px;
+
+}
+
+
+
+/*inici*/
+/*receta_rollito_primavera*/
+
+#inicio_rollito_primavera{
+  height: 500px;
+  width: 1870px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  background-attachment: fixed;
+}
+
+#inicio_rollito_primavera h4.subtitulo{
+  position: relative;
+  margin-top: -400px;
+  margin-left: 1570px;
+  font-family: AbrilFatface-Regular;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  text-align: center;
+  width: 520px;
+  color: red;
+
+}
+
+
+
+#inicio_rollito_primavera p{
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+  font-family: RedHatDisplay-Regular;
+  margin-left: 1300px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  display: block;
+  text-align: center;
+  width: 520px;
+}
+
+#imagen_rollito_primavera{
+  width: 1225pX;
+  height: 500pX;
+  background-size: cover;
+  margin-left: 0px;
+  display: block;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:1px 10px 25px rgba(0,0,0,0.5);
+}
+
+#imagen_rollito_primavera img{
+  transition: 2s;
+}
+
+#imagen_rollito_primavera img:hover{
+  transform: translateY(-30%);
+  filter: brightness(80%);
+}
+
+a.button_rollito_primavera{
+    margin-left: 1500px;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+a.button_rollito_primavera:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+
+}
+
+/*receta_rollito*/
+
+
+.plato_titulo.rollito{
+  margin-top: 50px;
+}
+
+.plato_titulo.rollito h1{
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.plato_postre.rollito{
+  position:absolute;
+  width: 190px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.plato_postre.rollito ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.plato_postre.rollito li{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.plato_postre.rollito h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.rollito{
+  height: 980px;
+}
+
+.plato_pasos.rollito{
+  width: 800px;
+  height: 630px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.rollito h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.rollito h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.plato_pasos.rollito ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.rollito li{
+  font-family: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*paneer tikka*/
+.plato_titulo.paneer{
+  margin-top: 50px;
+}
+
+.plato_titulo.paneer h1{
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.plato_postre.paneer{
+  position:absolute;
+  width: 190px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: red ;
+}
+
+.plato_postre.paneer ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.plato_postre.paneer li{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.plato_postre.paneer h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.paneer{
+  height: 750px;
+}
+
+.plato_pasos.paneer{
+  width: 800px;
+  height: 470px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.paneer h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.paneer h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.paneer ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.paneer li{
+  font-family: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+
+/*arepas*/
+
+
+.plato_titulo.arepas{
+  margin-top: 50px;
+}
+
+.plato_titulo.arepas h1{
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.plato_postre.arepas{
+  position:absolute;
+  width: 190px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: red ;
+}
+
+.plato_postre.arepas ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.plato_postre.arepas li{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.plato_postre.arepas h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.arepas{
+  height: 1580px;
+  background-color: white;
+}
+
+.plato_pasos.arepas{
+  width: 800px;
+  height: 1170px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.arepas h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.arepas h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.arepas ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.arepas li{
+  font-family: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+
+.receta_plato{
+  width: 860px;
+  height: 730px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+
+.plato_titulo{
+  background-color: white;
+  width: 860px;
+  height: 90px;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: block;
+}
+
+.plato_titulo h1{
+  font-family: AbrilFatface-Regular;
+  font-weight: bolder;
+  font-size: 60px;
+  padding-top: 13px;
+  margin-left: 30px;
+  color: red;
+}
+
+ .plato_pasos h2{
+   font-family: AbrilFatface-Regular;
+ }
+
+ .plato_pasos ul{
+   font-family: RedHatDisplay-Regular;
+ }
+
+/*receta_arros_fregit*/
+
+.plato_titulo.arroz{
+  margin-top: 50px;
+}
+
+.plato_titulo.arroz h1{
+  margin-left: 200px;
+  margin-top: 0px;
+}
+
+
+
+.receta_plato.arroz{
+  height: 630px;
+  margin-bottom: 50px;
+}
+
+.plato_pasos.arroz{
+  width: 800px;
+  height: 280px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+
+.plato_pasos.arroz h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.arroz h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.arroz ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.arroz li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*receta_TOFU_PICANT*/
+
+.plato_titulo.tofu{
+  margin-top: 50px;
+}
+
+.plato_titulo.tofu h1{
+  margin-left: 220px;
+}
+
+
+
+.receta_plato.tofu{
+  height: 760px;
+  margin-bottom: 50px;
+}
+
+.plato_pasos.tofu{
+  width: 800px;
+  height: 340px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.tofu h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.tofu h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.plato_pasos.tofu ul{
+  margin-left: 30px;
+}
+
+.plato_paso li{
+  font-family: RedHatDisplay-Regular;
+}
+.plato_pasos.tofu li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*receta_pique_macho*/
+
+.plato_titulo.pique{
+  margin-top: 50px;
+}
+
+.plato_titulo.pique h1{
+  margin-left: 210px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.pique{
+  position:absolute;
+  width: 205px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: red ;
+}
+
+.ingredientes_plato.pique ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_plato.pique li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+
+}
+
+.ingredientes_plato.pique h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.pique{
+  height: 790px;
+  margin-bottom: 50px;
+}
+
+.plato_pasos.pique{
+  width: 800px;
+  height: 445px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.pique h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.pique h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.plato_pasos.pique ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.pique li{
+  font-family: 20px;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+
+/*receta_majadita*/
+
+.plato_titulo.majadito{
+  margin-top: 50px;
+}
+
+.plato_titulo.majadito h1{
+  margin-left: 270px;
+  margin-top: 5px;
+}
+
+.ingredientes_plato.majadito{
+  position:absolute;
+  width: 205px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: red ;
+}
+
+.ingredientes_plato.majadito ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_plato.majadito li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+}
+
+.ingredientes_plato.majadito h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.majadito{
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+.plato_pasos.majadito{
+  width: 800px;
+  height: 280px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.plato_pasos.majadito h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.majadito h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.plato_pasos.majadito ul{
+  margin-left: 30px;
+}
+
+.plato_pasos.majadito li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+  font-family: RedHatDisplay-Regular;
+}
+
+
+/*postre*/
+.postre_titulo{
+  background-color: white;
+  width: 860px;
+  height: 90px;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: block;
+}
+
+.postre_titulo h1{
+  font-family: AbrilFatface-Regular;
+  font-weight: bolder;
+  font-size: 60px;
+  padding-top: 13px;
+  margin-left: 30px;
+  color: #F4736C;
+}
+.receta_postre{
+  width: 860px;
+  height: 730px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-top: 1px;
+}
+.ingredientes_postre ul{
+  margin-left: 30px;
+  margin-top: 20px;
+  color:white;
+}
+
+.ingredientes_postre li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre{
+  position:absolute;
+  width: 200px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.postre_pasos li{
+  font-family: RedHatDisplay-Regular;
+}
+
+/*postre china*/
+/*receta_bola_dolça*/
+
+
+.imagen_postre_china_receta{
+  position: absolute;
+  width:570px;
+  height:260px;
+  background-color: blue;
+  margin-left: 260px;
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+
+.postre_titulo.bola h1{
+  margin-left: 70px;
+}
+.receta_postre.bola{
+  width: 860px;
+  height: 590px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+.postre_pasos.bola{
+  width: 800px;
+  height: 320px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.postre_pasos.bola h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.bola h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.bola p{
+  font-family: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.postre_pasos.bola li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+    list-style: decimal;
+}
+
+.postre_pasos.bola ul{
+  margin-left: 30px;
+}
+
+/*flocs neu*/
+
+.postre_titulo.flocs{
+  margin-top: 50px;
+}
+
+.postre_titulo.flocs h1{
+  margin-left: 210px;
+  margin-top: 10px;
+}
+
+.ingredientes_postre.flocs{
+  position:absolute;
+  width: 190px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre.flocs ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.ingredientes_postre.flocs li{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.ingredientes_postre.flocs h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_postre.flocs{
+  height: 720px;
+}
+
+.postre_pasos.flocs{
+  width: 800px;
+  height: 450px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.postre_pasos.flocs h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.flocs h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.flocs ul{
+  margin-left: 30px;
+}
+
+.postre_pasos.flocs li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*POSTRE LATINA*/
+/*CUÑAPE*/
+
+.postre_titulo.cuñape{
+  margin-top: 50px;
+}
+
+.postre_titulo.cuñape h1{
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+.ingredientes_postre.cuñape{
+  position:absolute;
+  width: 205px;
+  height: 260px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre.cuñape ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_postre.cuñape li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+
+}
+
+.ingredientes_postre.cuñape h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_postre.cuñape{
+  height: 600px;
+}
+
+.postre_pasos.cuñape{
+  width: 800px;
+  height: 320px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.postre_pasos.cuñape h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.cuñape h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.cuñape ul{
+  margin-left: 30px;
+}
+
+.postre_pasos.cuñape li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*BUÑUELO*/
+
+.postre_titulo.buñuelo{
+  margin-top: 50px;
+}
+
+.postre_titulo.buñuelo h1{
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+.ingredientes_postre.buñuelo{
+  position:absolute;
+  width: 215px;
+  height: 355px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre.buñuelo ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_postre.buñuelo li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+
+}
+
+.ingredientes_postre.buñuelo h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_postre.buñuelo{
+  height: 760px;
+  margin-bottom: 50px;
+}
+
+.postre_pasos.buñuelo{
+  width: 800px;
+  height: 480px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.postre_pasos.buñuelo h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.buñuelo h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.buñuelo ul{
+  margin-left: 30px;
+}
+
+.postre_pasos.buñuelo li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+
+/*GULAB JAMUN*/
+
+.postre_titulo.gulab h1{
+  margin-left: 205px;
+  margin-top: 10px;
+}
+
+.postre_titulo.gulab{
+  margin-top: 50px;
+}
+
+.ingredientes_postre.gulab{
+  position:absolute;
+  width: 250px;
+  height: 360px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre.gulab ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_postre.gulab li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+
+}
+
+.ingredientes_postre.gulab h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_postre.gulab{
+  height: 730px;
+  margin-bottom: 50px;
+}
+
+.pasos_postre.gulab{
+  width: 800px;
+  height: 470px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.pasos_postre.gulab h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.pasos_postre.gulab h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.pasos_postre.gulab ul{
+  margin-left: 30px;
+}
+
+.pasos_postre.gulab li{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+
+}
+
+
+/*HALWA*/
+
+.postre_titulo.halwa h1{
+  margin-left: 270px;
+  margin-top: 10px;
+}
+
+.postre_titulo.halwa{
+  margin-top: 50px;
+}
+
+.ingredientes_postre.halwa{
+  position:absolute;
+  width: 200px;
+  height: 230px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #F4736C ;
+}
+
+.ingredientes_postre.halwa ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_postre.halwa li{
+  margin-top: 10px;
+  margin-left: 30px;
+  color:white;
+
+}
+
+.ingredientes_postre.halwa h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_postre.halwa{
+  height: 670px;
+  margin-bottom: 50px;
+}
+
+.postre_pasos.halwa{
+  width: 800px;
+  height: 410px;
+  background-color: #F4736C;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.postre_pasos.halwa h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.halwa h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.postre_pasos.halwa ul{
+  margin-left: 30px;
+}
+
+.postre_pasos.halwa li{
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+/*VADA*/
+
+.plato_titulo.vada h1{
+  margin-left: 250px;
+  margin-top: 10px;
+}
+
+.plato_titulo.vada{
+  margin-top: 50px;
+}
+
+.ingredientes_plato.vada{
+  position:absolute;
+  width: 200px;
+  height: 230px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: red ;
+}
+
+.ingredientes_plato.vada ul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color:white;
+}
+
+.ingredientes_plato.vada li{
+  margin-top: 13px;
+  margin-left: 30px;
+  color:white;
+}
+
+.ingredientes_plato.vada h3{
+  margin-top: 15px;
+  margin-left: 40px;
+  color:white;
+}
+
+.receta_plato.vada{
+  height: 920px;
+  margin-bottom: 50px;
+}
+
+.pasos_plato.vada{
+  width: 800px;
+  height: 600px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.pasos_plato.vada h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.pasos_plato.vada h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+  font-family: AbrilFatface-Regular;
+}
+
+.pasos_plato.vada ul{
+  margin-left: 30px;
+}
+
+.pasos_plato.vada li{
+  font-family: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+  font-family: RedHatDisplay-Regular;
+}
+
+.plato_ingredientes{
+  font-family: AbrilFatface-Regular;
+}
+
+
+
+
+/*samosa*/
+
+.plato_titulo.samosa h1{
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.plato_titulo.samosa{
+  margin-top: 50px;
+}
+
+.receta_plato.samosa{
+  height: 1360px;
+  margin-bottom: 50px;
+}
+
+.pasos_plato.samosa{
+  width: 800px;
+  height: 960px;
+  background-color: red;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.pasos_plato.samosa h1{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: white;
+}
+
+.pasos_plato.samosa h2{
+  font-family: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  font-family: AbrilFatface-Regular;
+}
+
+.pasos_plato.samosa ul{
+  margin-left: 30px;
+}
+
+.pasos_plato.samosa li{
+  font-family: RedHatDisplay-Regular;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  list-style: decimal;
+}
+
+
+
+
+
+
+
+.imagen_postre_china_receta2{
+  width: 570px;
+  height: 260px;
+  position :absolute;
+  transform: translate(-50%,50%);
+  box shadow: 10px 25px 28px red;
+  overflow: hidden;
+
+  margin-left: 540px;
+  z-index: 10;
+  margin-top: -100px;
+  color: red;
+  border-bottom: 1px solid red;
+  border-radius: 10px;
+
+}
+
+.contenedor_postre_china_receta2{
+  width: 800px;
+  display: flex;
+  animation: slide 8s infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+
+
+
+
+/*receta_masala_dosa*/
+
+a.button_atras {
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+a.button_atras:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+.masala_dosa{
+  width: 1870px;
+  height: 100px;
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+.masala_dosa h1{
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  margin-top: -70px;
+  font-family: updock;
+  font-weight: bold;
+}
+
+.ingredientes{
+  width: 1730px;
+  height: 460px;
+  background-color: pink;
+  border-radius: 10px;
+  margin-left: 50px;
+  opacity: 70%;
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.ingredientes ul{
+ margin-top: 20px;
+ margin-left: 20px;
+}
+
+.ingredientes li{
+ font-weight: 500;
+}
+
+}
+
+.box{
+  width: 700px;
+  height: 345px;
+  position :absolute;
+  transform: translate(-50%,50%);
+  box shadow: 10px 25px 28px red;
+  overflow: hidden;
+  margin-left: 330px;
+  z-index: 10;
+  margin-top: -194px;
+  color: red;
+  border-bottom: 1px solid red;
+  border-radius: 10px;
+
+}
+
+.contenedor{
+  width: 800px;
+  display: flex;
+  animation: slide 8s infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+
+.receta{
+  width: 1000px;
+  height: 690px;
+  background-color: pink;
+  border-radius: 10px;
+  margin-left: 50px;
+  opacity: 70%;
+  color: black;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.b1{
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.receta ul{
+ margin-top: 20px;
+ margin-left: 20px;
+}
+
+.receta li{
+ font-weight: 500;
+}
+
+/*slider_receta*/
+.photos{
+  width: 1190px;
+  height: 200px;
+  position: relative;
+  margin-top: -470px;
+  margin-right: 0px;
+
+}
+
+
+.slider_receta{
+  position: relative;
+  width: 200px;
+  height:200px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+.slider_receta span:hover{
+  transform:  translateY(-50px) scale(1.6);
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateY(0deg);
+  }
+
+  100%{
+      transform: rotateY(360deg);
+  }
+}
+
+.slider_receta span{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider_receta span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+
+}
+
+/*slider_receta2*/
+
+.photos2{
+  width: 1190px;
+  height: 200px;
+
+  margin-top: 40px;
+  margin-right: 0px;
+
+}
+
+.slider_receta2{
+  position: relative;
+  width: 200px;
+  height:200px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+.slider_receta2 span:hover{
+  transform:  translateY(-50px) scale(1.6);
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateY(0deg);
+  }
+
+  100%{
+      transform: rotateY(360deg);
+  }
+}
+
+.slider_receta2 span{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider_receta2 span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+
+}
+
+/*comidaindia*/
+
+
+
+
+
+/*comida*/
+
+.body_receta_plato{
+  background-color: ;
+}
+
+/*postre*/
+.noticia_postre p{
+  margin-bottom: 5px;
+}
+
+.body_postre{
+  background-color: white ;
+}
+
+#contenedor2{
+  background-color: white;
+  background-image: url(../IMG/fondo.jpeg);
+}
+
+#blog{
+  width:1400px;
+  margin: 0 auto;
+}
+
+.noticia_postre h2{
+  font-family: AbrilFatface-Regular;
+  text-align: center;
+  color: white;
+}
+
+.noticia_postre h3{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.noticia_postre{
+  width: 400px;
+  height: 400px;
+  background-color: #F4736C;
+  padding:20px;
+  float: left;
+  margin: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.noticia_postre:hover{
+  transform: scale(1.1);
+  transition-duration: 2s;
+
+}
+
+.noticia_postre img{
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.noticia_postre img:hover{
+  opacity: 50%;
+}
+
+
+
+a.button_postre{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 140px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: AbrilFatface-Regular;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+a.button_postre:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+/*postre*/
+.noticia_plato p{
+  margin-bottom: 5px;
+}
+
+
+
+#contenedor2_plato{
+  background-color: black;
+  background-image: url(../IMG/quienes_fondo.jpeg);
+}
+
+#blog_plato{
+  width:1400px;
+  margin: 0 auto;
+  background-image: url(../IMG/quienes_fondo.jpeg);
+}
+
+.noticia_plato h2{
+  font-family: AbrilFatface-Regular;
+  text-align: center;
+  color: red;
+}
+
+.noticia_plato h3{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.noticia_plato{
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  padding:20px;
+  float: left;
+  margin: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.noticia_plato:hover{
+  transform: scale(1.1);
+  transition-duration: 2s;
+
+}
+
+.noticia_plato img{
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.noticia_plato img:hover{
+  opacity: 50%;
+}
+
+
+
+.button_plato{
+    position: absolute;
+    text-align: center;
+    margin-top: 310px;
+    margin-left: -260px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: AbrilFatface-Regular;
+    color: black;
+    padding: 15px;
+    background-color: white;
+    width: 95px;
+    height: 30px;
+    border-radius: 20px;
+    text-decoration: underline;
+    border-bottom: 1px solid red;
+    border-radius: 10px;
+    border-top: 2px solid red;
+    box-shadow: 0 0 5px red,
+                0 0 5px red;
+}
+
+.button_plato:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+
+
+
+/*footer*/
+#footer{
+ background-color:black;
+ height:115px;
+ width:1870px;
+ margin-top:0px;
+ clear: both;
+
+}
+
+#footer h2{
+  font-family: RedHatDisplay-Regular;
+  font-size:17px;
+  font-weight:normal;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  position: absolute;
+  margin-left: 822px;
+}
+
+#footer h3{
+  font-family: RedHatDisplay-Regular;
+  font-size:15px;
+  font-weight:normal;
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+  position: absolute;
+  margin-left: 830px;
+  width: 120px;
+
+}
+
+#copyright{
+ background-color: white;
+ width: 1850px;
+ height: 25px;
+ margin-top:0px;
+ clear: both;
+ padding: 10px;
+}
+
+#copyright h3{
+  font-family: arial;
+  font-size:15px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: -3px;
+  position: absolute;
+  margin-left: 690px;
+  width:400px;
+}
+.media{
+  width:40px;
+  height: 40px;
+  border-radius:10px;
+  background-size: cover;
+  float: left;
+  position:absolute;
+  margin-top: 10px;
+}
+.media.facebook{
+  background-image:url(../IMG/facebook.jpg);
+  margin-left:800px;
+}
+
+.media.instagram{
+  background-image:url(../IMG/instagram.jpg);
+  margin-left:870px;
+}
+
+.media.pinterest{
+  background-image:url(../IMG/pinterest.png);
+  margin-left:940px;
+}
+
+
+
+/*Recetes*/
+/*slide*/
+.container{
+  width: 225px;
+  position :absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  border: 10px solid white;
+  box shadow: 10px 25px 28px red;
+  overflow: hidden;
+}
+
+.img-container{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+img{
+  width: 100%;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+
+/*contact*/
+#mapa{
+  margin-top: 40px;
+  margin-left: -245px;
+  width: 1870px;
+}
+
+.body_contacte{
+  background-image: url(../IMG/fondo_contacte.jpg);
+  background-size: 1870px auto;
+  background-repeat: no-repeat;
+
+}
+
+#contacte_fondo{
+  background-color: black;
+  width: 1500px;;
+  height: 1600px;
+}
+
+
+#contacte_fondo h2{
+  font-family: AbrilFatface-Regular;
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  margin-left: 60px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.linea{
+  background-color: red;
+  height:5px;
+  width: 430px;
+  margin-left: 525px;
+  margin-top: 20px;
+}
+#contacte_fondo h3{
+  font-size:24px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-family: AbrilFatface-Regular;
+}
+
+#contacte_fondo h4{
+  font-family: AbrilFatface-Regular;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  margin-top:20px;
+  margin-left: 40px;
+}
+
+video{
+ margin-top: -1850px;
+ margin-left: -900px;
+ height: 550px;
+ margin-bottom: 50px;
+}
+
+.formulari_contacte{
+  width:400px;
+  height: 550px;;
+  background-color: transparent;
+  display: flex;
+  margin-top: 40px;
+  margin-right: 500px;
+
+}
+
+form{
+  background-color: white;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+  display:flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width:90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3{
+  color:gray;
+  font-weight:800;
+  margin-bottom: 20px;
+
+}
+
+form input, form textarea{
+  border:0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+form button{
+  padding: 15px;
+  background: black;
+  color:#fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin:20px auto 0;
+  border-radius:30px;
+
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+form button:hover{
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+
+
+
+
+/*quines somos?*/
+.fondo05{
+ background-color: white;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+#pregunta{
+  width:1500px;
+  height:300px;
+  background-image: url("../IMG/fondo_contacte.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+  border-radius : 0 20px 20px 0;
+  margin-top: 90px;
+  margin-right: 680px;
+  position: relative;
+  z-index: -10;
+  box-shadow: 0 0 10px red,
+            0 0 10px red;
+
+}
+
+#pregunta h1{
+ font-family: AbrilFatface-Regular;
+ font-size: 100px;
+ color: red;
+ text-align: center;
+ padding-top: 85px;
+}
+
+#imagen_quienes{
+  width: 1870px;
+  height:500px;
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:100px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+#caja_negro{
+  width:100%;
+  height:500px;
+  background-color:black;
+  z-index: 20px;
+  opacity: 100%;
+  position: relative;
+  padding-top: 15px;
+}
+
+
+.logo_quienes{
+  background-color: transparent;
+  width: 680px;
+  height: 210px;
+  margin-top: 30px;
+  background-image: url(../IMG/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#caja_negro h2{
+  font-family: RedHatDisplay-Italic;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+  width: 1000px;
+}
+
+.bandera{
+  width: 400px;
+  height: 250px;
+  background-color: red;
+  margin-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 140px;
+  float: left;
+  background-size: cover;
+}
+
+.bandera.india{
+  margin-bottom: 0px;
+  background-image: url(../IMG/india.png);
+}
+
+.bandera.bolivia{
+  background-image: url(../IMG/bolivia.png);
+
+}
+
+.bandera.xina{
+  background-image: url(../IMG/xina.png);
+}
+
+
+@media only screen and (max-width:470px){
+  body{
+  background-color: white;
+ }
+
+ table,th,td{
+   border-collapse: collapse;
+   border: 0.5px dashed red;
+
+ }
+th{
+  font-family: AbrilFatface-Regular;
+}
+ table{
+   width: 330px;
+   text-align: center;
+   margin-top: 2px;
+ }
+ tr:nth-child(odd) {
+
+ }
+
+ .plato_ingredientes{
+   font-family: RedHatDisplay-Regular;
+ }
+ tr{
+   height: 20px;
+
+   font-size: 14px;
+ }
+ th{
+
+   height: 27px;
+   font-family: sans-serif;
+
+ }
+
+/*menu Mobil*/
+
+.logo{
+  margin-top: -120px;
+  margin-left: -45px;
+}
+nav{
+  display: none;
+ }
+ label .menu {
+  position: fixed;
+  margin-left: 370px;
+  margin-bottom: 280px;
+  margin-top: -50px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-bottom-left-radius: 60%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 red, 0 0 0 0 red;
+  cursor: pointer;
+  display: block;
+}
+label .menu.contacto, .menu.inicio, .menu.postre, .menu.comida{
+  margin-top: 0px;
+}
+ label .menu:hover {
+  color: red;
+  border-radius: 5px;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+ label .hamburger {
+  position:absolute;
+  top: 45px;
+  left: 23px;
+  width: 40px;
+  height: 2px;
+  background: red;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  clear: none;
+}
+
+ label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+ label .hamburger:before{
+   top: -10px;
+
+ }
+
+ label .hamburger:after{
+   bottom: -10px;
+
+ }
+
+ label input {
+   display: none;
+ }
+label ul li:before{
+  display: none;
+}
+
+ label input:checked + .menu {
+  box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
+  border-radius: 0;
+}
+
+ label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+ label input:checked + .menu .hamburger:after{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+
+}
+
+ label input:checked + .menu .hamburger:before{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+ label input:checked + .menu + ul{
+   display: block;
+ }
+ label input:checked + .menu + ul ul{
+   display: block;
+ }
+ label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+  display: inline-block;
+  display: none;
+  text-align: center;
+  font-style: bolder;
+}
+label ul ul {
+  visibility: collapse;
+  position: absolute;
+  top: 190px;
+  left: 140px;
+}
+label ul li:hover > ul{
+  top: 170px;
+  opacity: 1;
+  visibility: visible;
+}
+label ul ul li{
+  position: relative;
+  width: 200px;
+  float: none;
+  display: list-item;
+}
+li{
+  list-style-type: none;
+}
+
+.fa.fa-home{
+  color: white;
+}
+
+.fa.fa-users{
+  color: white;
+}
+
+.fa.fa-cutlery{
+  color: white;
+}
+
+
+.fa.fa-phone{
+  color: white;
+}
+
+ label a{
+  margin-bottom: 1em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+label a:hover {
+ color: red;
+}
+
+
+ label h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+/*imagen primera*/
+
+
+ #inicio_1{
+  width: 100%;
+  height: 330px;
+  background-color: white;
+  padding-top: 20px;
+  background-image: url("../IMG/quienes_fondo.jpg" );
+  background-size: cover;
+}
+
+#inicio_1 h4{
+  font-size: 50px;
+  margin-top: -800px;
+  margin-right:30px;
+}
+
+.titulo:after{
+  top:0;
+  margin-left: 145px;
+}
+
+.text-box{
+  display: none;
+}
+
+
+
+#inicio_rollito_primavera{
+   height: 180px;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   overflow: hidden;
+}
+
+
+ #inicio_rollito_primavera h4.subtitulo3{
+   margin-top: -534px;
+   margin-left: 20px;
+   width: 520px;
+}
+
+ #inicio_rollito_primavera h4.subtitulo3:after{
+   font-size: 25px;
+   width:520px;
+   margin-left: 20px;
+}
+
+
+
+ #imagen_rollito_primavera{
+  width: 60%;
+  height: 560px;
+  background-size: cover;
+  margin-left: 0px;
+  margin-top: 0px;
+
+
+}
+
+ #imagen_rollito_primavera img{
+  transition: 2s;
+}
+
+ #imagen_rollito_primavera img:hover{
+  transform: translateY(-30%);
+  filter: brightness(80%);
+}
+
+#inicio_rollito_primavera p{
+  margin-left: 280px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 160px;
+  overflow-y: scroll;
+  height: 80px;
+  font-size: 10px;
+}
+
+#inicio_rollito_primavera h4.subtitulo{
+  margin-top: -534px;
+  margin-left: 360px;
+  font-size: 13px;
+  width: 520px;
+}
+
+#inicio_rollito_primavera h4.subtitulo:after{
+  margin-left: 211px;
+}
+
+a.button_rollito_primavera{
+    margin-left: 325px;
+    margin-top: -200px;
+    font-size: 15px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*inici*/
+/*receta_masala_dosa*/
+#inicio_masala_dosa{
+  height: 180px;
+  width: 100%;
+  margin-top: 0px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+#imagen_masala_dosa{
+  width: 60%;
+  height: 550px;
+  margin-left: 180px;
+  margin-top: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#imagen_masala_dosa img{
+  transition: 2s;
+}
+
+#imagen_masala_dosa img:hover{
+ transform: translateY(-30%);
+ filter: brightness(80%);
+}
+
+#inicio_masala_dosa h6.subtitulo{
+  margin-top: -534px;
+  margin-left: 302px;
+  font-size: 14px;
+}
+ .slogan{
+   width: 150px;
+   height: 150px;
+   margin-top: 70px;
+ }
+.slogan h2{
+  font-size: 30px;
+  line-height: 30px;
+  width: 80px;
+}
+
+#inicio_masala_dosa p{
+  font-size: 9px;
+  margin-left: 10px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  width: 163px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+a.button_masala_dosa{
+    margin-left: 50px;
+    margin-top: 140px;
+    font-size: 15px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*inici*/
+/*receta_arepas*/
+#inicio_arepas{
+  height: 151px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#imagen_arepas{
+  width: 60%;
+  height: 550px;
+  margin-top: 0px;
+
+}
+
+#imagen_arepas img{
+ transition: 2s;
+}
+
+#imagen_arepas img:hover{
+ transform: translateY(-30%);
+ filter: brightness(80%);
+}
+
+
+#inicio_arepas h6.subtitulo{
+  margin-top: -535px;
+  margin-left: 360px;
+  font-size: 14px;
+}
+
+#inicio_arepas p{
+  font-size: 9px;
+  margin-left: 280px;
+  margin-top:0px;
+  margin-bottom: 17px;
+  width: 160px;
+  overflow-y: scroll;
+  height: 50px;
+}
+
+a.button_arepas{
+    margin-left: 321px;
+    margin-top: 200px;
+    font-size: 15px;
+    padding: 5px;
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+
+.inicio_1_img{
+  display:none;
+
+}
+
+/*postre*/
+.noticia_postre p{
+  margin-bottom: 5px;
+}
+
+.body_comida{
+  width: 100%;
+  background-color: white;
+}
+
+#contenedor2{
+  width: 100%;
+
+}
+
+#blog{
+  width: 100%;
+  margin-left: 45px;
+}
+
+.noticia_postre h2{
+  font-size: 20px;
+}
+
+
+
+.noticia_postre{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+
+}
+
+
+
+.noticia_postre img{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 300px;
+  height: 200px;
+}
+
+
+
+
+a.button_postre{
+    margin-top: -180px;
+    margin-left: 100px;
+    font-size: 18px;
+    padding: 10px;
+    width: 60px;
+    height: 10px;
+    border-radius: 20px;
+}
+
+a.button_postre:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+/*postre*/
+.noticia_postre_plato p{
+  margin-bottom: 5px;
+}
+
+.body_comida{
+  width: 100%;
+  background-color: white;
+}
+
+#contenedor2_plato{
+  width: 100%;
+
+}
+
+#blog_plato{
+  width: 100%;
+  margin-left: 45px;
+}
+
+.noticia_plato h2{
+  font-size: 20px;
+
+}
+
+
+
+.noticia_plato{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+
+}
+
+
+
+.noticia_plato img{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 300px;
+  height: 200px;
+}
+
+
+
+
+.button_plato{
+    margin-top: 235px;
+    margin-left: -190px;
+    font-size: 18px;
+    padding: 10px;
+    width: 80px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.button_plato:hover {
+  background-color: white;
+  opacity:80%;
+  color: black;
+  border-top: 2px solid red;
+  box-shadow: 0 0 5px red,
+              0 0 5px red;
+}
+
+
+
+/*postre todo*/
+.receta_postre{
+  width: 390px;
+  height: 505px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+.postre_titulo{
+  width: 390px;
+  height: 35px;
+  margin-top: 110px;
+  margin-left: 35px;
+}
+
+.postre_titulo h1{
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+
+.plato_postre{
+  width: 390px;
+  height: 505px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+.plato_titulo{
+  width: 390px;
+  height: 35px;
+  margin-left: 35px;
+}
+
+.plato_titulo h1{
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+/*arros*/
+.receta_plato.arroz{
+  width: 390px;
+  height: 590px;
+
+}
+
+.plato_titulo.arroz h1{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.arroz ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.arroz li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.arroz{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.arroz h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.arroz{
+  width: 330px;
+  height: 285px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.arroz h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.arroz h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.plato_pasos.arroz p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.arroz li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.arroz ul{
+  margin-left: 25px;
+}
+
+
+/*rollito*/
+.receta_plato.rollito{
+  width: 390px;
+  height: 1150px;
+}
+
+.plato_titulo.rollito h1{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.rollito ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.rollito li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.rollito{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.rollito h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.rollito{
+  width: 330px;
+  height: 850px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.rollito h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.rollito h2{
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 18px;
+}
+
+.plato_pasos.rollito p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.rollito li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.rollito ul{
+  margin-left: 25px;
+}
+
+
+
+
+/*paneer*/
+.receta_plato.paneer{
+  width: 390px;
+  height: 740px;
+}
+
+.plato_titulo.paneer h1{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.paneer ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.paneer li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.paneer{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.paneer h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.paneer{
+  width: 330px;
+  height: 520px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.paneer h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.paneer h2{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+.plato_pasos.paneer p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.paneer li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.paneer ul{
+  margin-left: 25px;
+}
+
+
+/*paneer*/
+.receta_plato.arepas{
+  width: 390px;
+  height: 1940px;
+}
+
+.plato_titulo.arepas h1{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.arepas ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.arepas li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.arepas{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.arepas h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.arepas{
+  width: 330px;
+  height: 1590px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.arepas h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.arepas h2{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+.plato_pasos.arepas p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.arepas li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.arepas ul{
+  margin-left: 25px;
+}
+
+
+
+
+
+
+/*majadito*/
+.receta_plato.majadito{
+  width: 390px;
+  height: 550px;
+}
+
+.plato_titulo.majadito h1{
+  margin-left: 125px;
+  margin-top: 5px;
+}
+
+
+.ingredientes_plato.majadito ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.majadito li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.majadito{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.majadito h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.majadito{
+  width: 330px;
+  height: 290px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.majadito h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.majadito h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.plato_pasos.majadito p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.majadito li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.majadito ul{
+  margin-left: 25px;
+}
+
+/*pique*/
+.receta_plato.pique{
+  width: 390px;
+  height: 865px;
+}
+
+.plato_titulo.pique h1{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.pique ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.pique li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.pique{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.pique h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.pique{
+  width: 330px;
+  height: 630px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.pique h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.pique h2{
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.plato_pasos.pique p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.pique li{
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.pique ul{
+  margin-left: 15px;
+}
+
+/*vada*/
+.receta_plato.vada{
+  width: 390px;
+  height: 980px;
+}
+
+
+.plato_titulo.vada h1{
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.ingredientes_plato.vada ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.vada li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.vada{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.vada h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.pasos_plato.vada{
+  width: 330px;
+  height: 790px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.pasos_plato.vada h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.pasos_plato.vada h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.pasos_plato.vada p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.pasos_plato.vada li{
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.pasos_plato.vada ul{
+  margin-left: 15px;
+}
+
+
+/*samosa*/
+.receta_plato.samosa{
+  width: 390px;
+  height: 1380px;
+}
+
+
+.plato_titulo.samosa h1{
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+
+
+.pasos_plato.samosa{
+  width: 330px;
+  height: 1055px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.pasos_plato.samosa h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.pasos_plato.samosa h2{
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.pasos_plato.samosa p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.pasos_plato.samosa li{
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.pasos_plato.samosa ul{
+  margin-left: 15px;
+}
+
+
+
+/*tofu*/
+.plato_titulo.tofu h1{
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.receta_plato.tofu{
+  width: 390px;
+  height: 640px;
+}
+
+.ingredientes_plato.tofu ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_plato.tofu li{
+  margin-top: 5px;
+}
+
+.ingredientes_plato.tofu{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_plato.tofu h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.plato_pasos.tofu{
+  width: 330px;
+  height: 310px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.plato_pasos.tofu h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.plato_pasos.tofu h2{
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.plato_pasos.tofu p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plato_pasos.tofu li{
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.plato_pasos.tofu ul{
+  margin-left: 15px;
+}
+
+
+/*postre china*/
+body .bola{
+  margin-top: 50px;
+}
+.receta_postre.bola{
+  width: 390px;
+  height: 630px;
+  ma
+}
+
+.postre_titulo.bola h1{
+  margin-left: 35px;
+}
+.ingredientes_postre.bola ul{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_postre.bola li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre.bola{
+  width: 153px;
+  height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.bola h3{
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+
+.postre_pasos.bola{
+  width: 330px;
+  height: 370px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.postre_pasos.bola h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.postre_pasos.bola h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.bola p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postre_pasos.bola li{
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.postre_pasos.bola ul{
+  margin-left: 25px;
+}
+
+
+/*flocs*/
+
+.postre_titulo.flocs h1{
+  margin-left: 100px;
+  margin-top: 3px;
+}
+
+.receta_postre.flocs{
+  height: 720px;
+}
+
+.ingredientes_postre.flocs ul{
+  margin-left: -5px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_postre.flocs li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre.flocs{
+  width: 155px;
+  height: 175px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.flocs h3{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+
+.postre_pasos.flocs{
+  width: 330px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.postre_pasos.flocs h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.flocs h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.flocs p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postre_pasos.flocs li{
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+.postre_pasos.flocs ul{
+  margin-left: 25px;
+}
+
+
+/*cuñape*/
+.postre_titulo.cuñape{
+  margin-left: 35px;
+
+}
+
+.postre_titulo.cuñape h1{
+  margin-left: 75px;
+  padding-top: 5px;
+}
+
+.receta_postre.cuñape{
+  height: 600px;
+}
+
+.ingredientes_postre.cuñape ul{
+  margin-left: -15px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_postre.cuñape li{
+  margin-top: 5px;
+
+}
+
+.ingredientes_postre.cuñape{
+  width: 155px;
+  height: 185px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.cuñape h3{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+
+.postre_pasos.cuñape{
+  width: 330px;
+  height: 270px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.postre_pasos.cuñape h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.cuñape h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.cuñape p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postre_pasos.cuñape li{
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+.ingredientes_postre.cuñape ul{
+  margin-left: 5px;
+}
+
+/*buñuelo*/
+.postre_titulo.buñuelo{
+  margin-left: 35px;
+}
+
+.postre_titulo.buñuelo h1{
+  margin-left: 75px;
+  padding-top: 5px;
+}
+
+.receta_postre.buñuelo{
+  height: 740px;
+}
+
+.ingredientes_postre.buñuelo ul{
+  margin-left: -5px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ingredientes_postre.buñuelo li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre.buñuelo{
+  width: 160px;
+  height: 250px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.buñuelo h3{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+
+.postre_pasos.buñuelo{
+  width: 330px;
+  height: 515px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.postre_pasos.buñuelo h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.postre_pasos.buñuelo h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.postre_pasos.buñuelo p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postre_pasos.buñuelo li{
+  margin-top: 8px;
+  margin-left: 0px;
+
+  font-size: 12px;
+}
+
+
+
+/*GULAB*/
+.postre_titulo.gulab{
+  margin-left: 35px;
+}
+
+.postre_titulo.gulab h1{
+  margin-left: 100px;
+  padding-top: 5px;
+}
+
+.receta_postre.gulab{
+  height: 930px;
+}
+
+.ingredientes_postre.gulab ul{
+  margin-left: -5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.ingredientes_postre.gulab li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre.gulab{
+  width: 160px;
+  height: 320px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.gulab h3{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+
+.pasos_postre.gulab{
+  width: 330px;
+  height: 750px;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.pasos_postre.gulab h1{
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.pasos_postre.gulab h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.pasos_postre.gulab p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.pasos_postre.gulab li{
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+
+
+/*HALWA*/
+.postre_titulo.halwa{
+  margin-left: 30px;
+}
+
+.postre_titulo.halwa h1{
+  margin-left: 120px;
+}
+
+.receta_postre.halwa{
+  height: 620px;
+}
+
+.ingredientes_postre.halwa ul{
+  margin-left: -5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.ingredientes_postre.halwa li{
+  margin-top: 5px;
+}
+
+.ingredientes_postre.halwa{
+  width: 145px;
+  height: 165px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.ingredientes_postre.halwa h3{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+
+.postre_pasos.halwa{
+  width: 330px;
+  height: 420px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.postre_pasos.halwa h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.halwa h2{
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.postre_pasos.halwa p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.postre_pasos.halwa li{
+  margin-top: 8px;
+  margin-left: 0px;
+  font-size: 14px;
+}
+
+
+/*footer*/
+#footer{
+ background-color:black;
+ height: 60px;
+ width: 100%;
+ margin-top: 0px;
+ clear: both;
+
+}
+
+#footer h2{
+  font-size: 10px;
+  color: white;
+  margin-top: 28px;
+  margin-left: 179px;
+}
+
+#footer h3{
+  font-size: 8px;
+  color: white;
+  margin-top: 45px;
+  margin-left: 158px;
+  width: 120px;
+}
+
+#copyright{
+ width: 430px;
+ height: 16px;
+ margin-top: 0px;
+}
+
+#copyright h3{
+  font-size: 8px;
+  font-family: AbrilFatface-Regular;
+  margin-left: 10px;
+  width:400px;
+}
+
+.media{
+  width:15px;
+  height: 15px;
+  border-radius:5px;
+  background-size: cover;
+  margin-top: 7px;
+}
+.media.facebook{
+  margin-left: 180px;
+}
+
+.media.instagram{
+  margin-left: 210px;
+}
+
+.media.pinterest{
+  margin-left: 240px;
+}
+
+/*contact*/
+#mapa{
+  width: 380px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+}
+
+.body_contacte{
+  width: 100%;
+  background-image: url(../IMG/fondo_contacte.jpg);
+}
+
+#contacte_fondo{
+  background-color: white;
+  width: 350px;;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1px;
+}
+
+
+
+#contacte_fondo h2{
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  margin-left: -15px;
+  text-align: center;
+}
+
+.linea{
+  background-color: red;
+  height:3px;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+
+#contacte_fondo h3{
+  color: black;
+  font-size: 15px;
+  margin-top: 11px;
+  margin-left: 15px;
+}
+
+#contacte_fondo h4{
+  font-size: 15px;
+  color: black;
+  margin-top:11px;
+  margin-left: 15px;
+}
+
+video{
+ margin-top: -520px;
+ margin-left: 0px;
+ height: 300px;
+ margin-top: 0px;
+
+}
+
+.formulari_contacte{
+  width:400px;
+  height: 550px;;
+  background-color: transparent;
+  display: flex;
+  margin-top: 0px;
+  margin-left: -10px;
+
+}
+
+form{
+  display:flex;
+  width: 250px;
+  height: 400px;
+}
+
+form h3{
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button{
+  padding: 8px;
+  font-size: 12px;
+  width: 100px;
+  margin: 20px auto 0;
+  font-family: AbrilFatface-Regular;
+}
+
+
+/*quines somos?*/
+.fondo05{
+ width:100%;
+}
+
+#pregunta{
+  width:70%;
+  height:150px;
+  border-radius : 0 20px 20px 0;
+  margin-top: 50px;
+  margin-right: 680px;
+}
+
+.logo_quienes{
+  background-color: transparent;
+  width: 360px;
+  height: 110px;
+  margin-top: 0px;
+  background-image: url(../IMG/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#pregunta h1{
+ font-size: 25px;
+ text-align: center;
+ padding-top: 65px;
+}
+
+#imagen_quienes{
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  margin-top:100px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+#caja_negro{
+  background-color: black;
+  width:100%;
+  height:350px;
+  z-index: 20px;
+  opacity: 100%;
+  position: relative;
+}
+
+#caja_negro h1{
+ font-size:30px;
+ text-align: center;
+ padding-top:30px;
+}
+
+
+
+#caja_negro h2{
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  padding-top:15px;
+  width: 390px;
+}
+
+
+.bandera{
+  width: 300px;
+  height: 200px;
+  background-color: red;
+  margin-top: 50px;
+  float: left;
+
+}
+
+.bandera.india{
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: 75px;
+  background-image: url(../IMG/india.png);
+  background-size: cover;
+}
+
+.bandera.bolivia{
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: 75px;
+  background-image: url(../IMG/bolivia.png);
+  background-size: cover;
+}
+
+.bandera.xina{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 75px;
+  background-image: url(../IMG/xina.png);
+  background-size: cover;
+}
+
+
+
+
+
+
+
+}
